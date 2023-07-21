@@ -1,0 +1,74 @@
+.services-container {
+    width: 100%;
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    flex-wrap: wrap;
+    direction: rtl;
+    animation: appearance 1s linear;
+
+    @keyframes appearance {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        color: rgb(74, 74, 74);
+        font-family: koodak;
+        text-decoration: none;
+
+        img {
+            width: 50px;
+        }
+        .more-btn {
+            font-size: 40px;
+            background-color: rgb(228, 228, 228);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+}
+
+@media screen and (max-width : 768px) {
+    .services-container {
+        grid-template-columns: repeat(3, auto);
+        gap: 30px;
+        // padding: 20px 20px;
+    }
+}
+
+@media screen and (max-width : 576px) {
+    .services-container {
+        gap: 20px;
+        padding: 40px 20px;
+
+        a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: rgb(74, 74, 74);
+            font-family: koodak;
+            text-decoration: none;
+            font-size: 14px;
+    
+            img {
+                width: 40px;
+            }
+            .more-btn {
+                font-size: 36px;
+            }
+        }
+    }
+}

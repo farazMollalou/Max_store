@@ -1,0 +1,91 @@
+.special-ads-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 95%;
+    padding: 25px 10px;
+    margin: 0 auto;
+    min-height: 300px;
+}
+.special-ads-container img {
+    width: 600px;
+    object-fit: cover;
+    border-radius: 12px;
+    /* height: 300px; */
+}
+.flagship_products_container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+    flex-flow: wrap row;
+    /* display: grid;
+    grid-template-columns: repeat(4, auto); */
+}
+.flagship_products_container .unit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    font-family: koodak;
+    border: 1px #e0e0e0 solid;
+    padding: 10px;
+    gap: 15px;
+}
+.flagship_products_container .laptop-unit {
+    border-radius: 0 25px 25px 0;
+}
+.flagship_products_container .headphone-unit {
+    border-radius: 25px 0 0 25px;
+}
+.flagship_products_container .unit .products-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 25px;
+}
+.flagship_products_container .unit .products-container img {
+    width: 100px;
+}
+.flagship_products_container .unit a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgba(0, 60, 255, 0.731);
+}
+.flagship_products_container .unit a .arrow-icon {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 750px) {
+    .flagship_products_container .unit {
+        width: 600px;
+    }
+    .flagship_products_container .unit .products-container img {
+        width: 150px;
+    }
+    .flagship_products_container .laptop-unit {
+        border-radius: 0 0 25px 25px;
+    }
+    .flagship_products_container .headphone-unit {
+        border-radius: 25px 25px 0 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .special-ads-container {
+        gap: 10px;
+    }
+    .special-ads-container img {
+        width: 100%;
+    }
+    .flagship_products_container .unit {
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .flagship_products_container .unit .products-container img {
+        width: 100px;
+    }
+}

@@ -1,0 +1,271 @@
+.slider-header {
+  width: 100%;
+  padding-top: 50px;
+  font-family: farnaz;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  gap: 30px;
+  margin-top: 20px;
+}
+.slider-header h2 {
+  font-size: 40px;
+}
+.slider-header .category-container {
+  overflow: auto;
+  width: 100%;
+  direction: rtl;
+  padding: 10px 20px 10px 15px;
+  white-space: nowrap;
+}
+.slider-header .category-container::-webkit-scrollbar-thumb {
+  visibility: hidden;
+}
+.slider-header .category-container a {
+  text-align: center;
+  text-decoration: none;
+  color: aliceblue;
+  display: inline-block;
+  direction: rtl;
+  gap: 5px;
+  font-family: koodak;
+  min-width: 120px;
+  font-size: 20px;
+  padding: 4px 20px;
+}
+.slider-header .category-container a:hover {
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(255, 255, 255, 0.3176470588);
+  border-color: gold;
+}
+.slider-header .category-container a .icon {
+  margin-left: 5px;
+}
+
+.incredible-slider-temp {
+  width: 100%;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 180px 20px;
+  direction: rtl;
+  margin: 0 auto;
+}
+.incredible-slider-temp a {
+  text-decoration: none;
+}
+.incredible-slider-temp .swiper-scrollbar {
+  display: none;
+}
+.incredible-slider-temp .swiper-pagination {
+  display: none;
+}
+.incredible-slider-temp .swiper-pagination-bullet {
+  visibility: hidden;
+}
+.incredible-slider-temp .swiper-button-next, .incredible-slider-temp .swiper-button-prev {
+  background-color: rgb(255, 230, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #000000;
+  transform: scale(0.7);
+}
+.incredible-slider-temp .slider-card, .incredible-slider-temp .last-card, .incredible-slider-temp .first-card {
+  padding: 5px 5px;
+  height: 300px;
+  width: 240px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: koodak;
+  background-color: #fff;
+  position: relative;
+}
+.incredible-slider-temp .slider-card img, .incredible-slider-temp .last-card img, .incredible-slider-temp .first-card img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+.incredible-slider-temp .slider-card .row1, .incredible-slider-temp .last-card .row1, .incredible-slider-temp .first-card .row1, .incredible-slider-temp .slider-card .row2, .incredible-slider-temp .last-card .row2, .incredible-slider-temp .first-card .row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 10px;
+  width: 100%;
+  font-family: koodak;
+  direction: ltr;
+  color: #333333;
+  margin-top: 4px;
+}
+.incredible-slider-temp .slider-card .row1 .off-num, .incredible-slider-temp .last-card .row1 .off-num, .incredible-slider-temp .first-card .row1 .off-num, .incredible-slider-temp .slider-card .row2 .off-num, .incredible-slider-temp .last-card .row2 .off-num, .incredible-slider-temp .first-card .row2 .off-num {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(255, 54, 54);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 18px;
+  transform: rotate(-20deg);
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.incredible-slider-temp .slider-card .row1 .current-price, .incredible-slider-temp .last-card .row1 .current-price, .incredible-slider-temp .first-card .row1 .current-price, .incredible-slider-temp .slider-card .row2 .current-price, .incredible-slider-temp .last-card .row2 .current-price, .incredible-slider-temp .first-card .row2 .current-price {
+  direction: rtl;
+  font-size: 20px;
+}
+.incredible-slider-temp .slider-card .row2, .incredible-slider-temp .last-card .row2, .incredible-slider-temp .first-card .row2 {
+  justify-content: center;
+  font-size: 18px;
+}
+.incredible-slider-temp .slider-card .row2 del, .incredible-slider-temp .last-card .row2 del, .incredible-slider-temp .first-card .row2 del {
+  color: rgb(166, 166, 166);
+  position: relative;
+}
+.incredible-slider-temp .slider-card .row2 del::after, .incredible-slider-temp .last-card .row2 del::after, .incredible-slider-temp .first-card .row2 del::after {
+  content: "";
+  position: absolute;
+  bottom: 12px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #b0b0b0;
+  border-radius: 10px;
+}
+.incredible-slider-temp .first-card {
+  color: #fff;
+  background-color: inherit;
+}
+.incredible-slider-temp .first-card h4 {
+  font-family: farnaz;
+}
+.incredible-slider-temp .first-card img {
+  width: 150px;
+  height: auto;
+}
+.incredible-slider-temp .first-card a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
+.incredible-slider-temp .first-card a:hover .arrow {
+  transform: translateX(-15px);
+  font-size: 30px;
+}
+.incredible-slider-temp .first-card a .arrow {
+  font-size: 20px;
+  transition: 0.5s;
+}
+.incredible-slider-temp .last-card {
+  transition: 0.5s;
+}
+.incredible-slider-temp .last-card:hover {
+  gap: 25px;
+}
+.incredible-slider-temp .last-card:hover .icon {
+  background-color: aqua;
+  color: #fff;
+}
+.incredible-slider-temp .last-card .icon {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: aqua 4px solid;
+  color: aqua;
+  transform: scale(0.6);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+  .incredible-slider-temp {
+    height: 300px;
+    padding: 0 15px;
+  }
+  .incredible-slider-temp .slider-card, .incredible-slider-temp .first-card, .incredible-slider-temp .last-card {
+    padding: 5px 5px;
+    height: 240px;
+    width: 210px;
+    border-radius: 10px;
+  }
+  .incredible-slider-temp .slider-card img, .incredible-slider-temp .first-card img, .incredible-slider-temp .last-card img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 992px) {
+  .incredible-slider-temp {
+    height: 270px;
+    padding: 0 15px;
+  }
+  .incredible-slider-temp .slider-card, .incredible-slider-temp .first-card, .incredible-slider-temp .last-card {
+    padding: 5px 5px;
+    height: 240px;
+    width: 210px;
+    border-radius: 10px;
+    gap: 8px;
+    font-family: koodak;
+    background-color: #fff;
+  }
+  .incredible-slider-temp .slider-card img, .incredible-slider-temp .first-card img, .incredible-slider-temp .last-card img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+  .incredible-slider-temp .first-card {
+    color: #fff;
+    background-color: inherit;
+  }
+  .incredible-slider-temp .first-card img {
+    width: 150px;
+    height: auto;
+  }
+  .incredible-slider-temp .first-card a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+  }
+  .incredible-slider-temp .first-card a:hover .arrow {
+    transform: translateX(-15px);
+    font-size: 30px;
+  }
+  .incredible-slider-temp .first-card a .arrow {
+    font-size: 20px;
+    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-header h2 {
+    font-size: 30px;
+  }
+  .incredible-slider-temp {
+    margin: 0;
+    border-radius: 0;
+    height: 280px;
+  }
+  .incredible-slider-temp .slider-card, .incredible-slider-temp .first-card, .incredible-slider-temp .last-card {
+    height: 260px;
+    margin: 0 auto;
+  }
+  .incredible-slider-temp .first-card img {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .slider-header .category-container a {
+    font-size: 16px;
+    width: 100px;
+    padding: 3px 12px;
+  }
+}/*# sourceMappingURL=IncredibleSlider.css.map */

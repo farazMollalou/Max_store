@@ -1,0 +1,43 @@
+.carousel-container {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  background-color: rgb(213, 204, 204);
+  animation: appearance 1s linear;
+}
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.carousel-container button[type=button] {
+  background-color: rgb(255, 255, 255);
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+}
+.carousel-container .sld-img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 992px) {
+  .carousel-container {
+    height: 300px;
+  }
+  .carousel-container .sld-img {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .carousel-container {
+    height: 200px;
+  }
+  .carousel-container .sld-img {
+    height: 200px;
+  }
+}/*# sourceMappingURL=MainSlider.css.map */

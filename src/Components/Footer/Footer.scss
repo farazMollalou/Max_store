@@ -1,0 +1,393 @@
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 300px;
+    margin-top: 100px;
+    background-color: #f949f955;
+    border-top: 2px solid #30004f;
+    padding-top: 80px;
+    
+    .subscribe-box {
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        // gap: 60px;
+        background: linear-gradient(15deg, rgb(193, 37, 193), #71319c, rgb(96, 50, 249));
+        border-radius: 20px;
+        padding: 20px 15px;
+        direction: rtl;
+        font-family: koodak;
+        position: absolute;
+        top: -50px;
+        box-shadow: #30004f 3px 4px 10px;
+
+        span {
+            color: aliceblue;
+            font-size: 22px;
+        }
+        .email-box {
+            width: 450px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+
+            input {
+                width: 90%;
+                padding: 5px 20px;
+                font-size: 20px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                background-color: #9e28eda2;
+                transition: .5s;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                direction: ltr;
+                
+                &::placeholder {
+                    color: rgba(179, 179, 179, 0.904);
+                    font-family: koodak;
+                    text-align: right;
+                }
+                &:focus {
+                    background-color: antiquewhite;
+                    color: rgb(55, 55, 55);
+                    text-align: center;
+                }
+            }
+            button {
+                font-family: koodak;
+                font-size: 20px;
+                padding: 3px 12px;
+                width: 100px;
+                border: none;
+                outline: none;
+                border-radius: 20px;
+                background-color: gold;
+            }
+        }
+    }
+    .row1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 0 80px;
+        width: 100%;
+        direction: rtl;
+
+        .brand-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-family: koodak;
+
+            img {
+                width: 120px;
+            }
+            .text {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .line {
+                    margin: 0 12px;
+                    width: 2px;
+                    height: 26px;
+                    border-radius: 10px;
+                    background-color: #30004f;
+                }
+            }
+        }
+        .social-media {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: koodak;
+            gap: 20px;
+            width: 250px;
+
+            .title {
+                font-size: 24px;
+                text-align: center;
+            }
+            .icon-container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 25px;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(87, 87, 87);
+
+                    .icon {
+                        font-size: 35px;
+
+                        &:hover {
+                            &.tel, &.face {
+                                color: rgb(0, 102, 255);
+                            }
+                            &.ins {
+                                color: rgb(255, 29, 66);
+                            }
+                            &.yout {
+                                color: red;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .links-container {
+        width: 100%;
+        display: flex;
+        align-items: baseline;
+        justify-content: space-evenly;
+        margin-top: 60px;
+        direction: rtl;
+
+        .link-box {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            margin: 50px 0;
+            gap: 16px;
+
+            h6 {
+                font-weight: 700;
+                margin-bottom: 5px;
+                font-family: koodak;
+                font-size: 24px;
+            }
+            a {
+                text-decoration: none;
+                color: lighten($color: #000000, $amount: 36%);
+                font-family: koodak;
+                position: relative;
+                padding: 4px 16px;
+                z-index: 2;
+
+                &:hover {
+                    &::after, &::before {
+                        width: 100%;
+                    }
+                    &::after {
+                        left: 0;
+                    }
+                    &::before {
+                        right: 0;
+                        padding: 0 5px;
+                    }
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: -15px;
+                    bottom: 0;
+                    width: 0%;
+                    height: 2px;
+                    border-radius: 10px;
+                    background-color: rgb(255, 0, 55);
+                    transition: .5s;
+                }
+                &::before {
+                    content: "";
+                    width: 0%;
+                    position: absolute;
+                    right: -15px;
+                    bottom: 0;
+                    height: 100%;
+                    background-color: rgb(255, 234, 0);
+                    z-index: -1;
+                    border-radius: 10px;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+    .copy-right-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: koodak;
+        font-size: 22px;
+        color: rgb(82, 82, 82);
+        padding: 20px 0 70px 0;
+        width: 100%;
+
+        strong {
+            color: #000000;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .footer {
+        margin-top: 150px;
+
+        .subscribe-box {
+            width: 90%;
+            padding: 10px 10px;
+            top: -30px;
+
+            span {
+                font-size: 16px;
+            }
+            .email-box {
+                width: 50%;
+                gap: 0;
+
+                input {
+                    padding: 4px 12px;
+                    font-size: 18px;
+                }
+                button {
+                    font-size: 18px;
+                    padding: 2px 7px;
+                    width: 80px;
+                }
+            }
+        }
+        .row1 {
+            padding: 0 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        .row1 {
+            // flex-direction: column;
+            padding: 0 20px;
+            justify-content: space-evenly;
+
+            .brand-box {
+                // width: 90%;
+                gap: 15px;
+
+                .text {
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 8px;
+                    padding-right: 20px;
+                    font-size: 14px;
+                    color: rgb(68, 68, 68);
+
+                    .line {
+                        display: none;
+                    }
+                }
+            }
+            .social-media {
+                gap: 10px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer {
+        margin-top: 120px;
+
+        .subscribe-box {
+            flex-direction: column;
+            gap: 10px;
+            padding: 16px 10px;
+            top: -50px;
+
+            span {
+                font-size: 18px;
+            }
+            .email-box {
+                width: 80%;
+            
+                input {
+                    border-radius: 0 10px 10px 0;
+                    padding: 2px 12px;
+                }
+                button {
+                    border-radius: 10px 0 0 10px;
+                }
+            }
+        }
+        .row1 {
+            padding: 0 5px;
+            justify-content: space-between;
+
+            .brand-box {
+                padding-right: 5px;
+                flex: 1.2;
+                .text {
+                    padding-right: 0px;
+                }
+            }
+            .social-media {
+                gap: 12px;
+                flex: 1;
+
+                .title {
+                    font-size: 19px;
+                }
+                .icon-container {
+                    gap: 12px;
+
+                    a {
+                        .icon {
+                            font-size: 27px;
+                        }
+                    }
+                }
+            }
+        }
+        .links-container {
+            margin-top: 20px;
+
+            .branch, .special-services {
+                display: none;
+            }
+        }
+        .copy-right-box {
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .footer {
+        padding-top: 60px;
+
+        .subscribe-box {
+            width: 95%;
+            padding: 10px 6px;
+
+            .email-box {
+                width: 95%;
+            }
+        }
+        .row1 {
+            flex-direction: column;
+            gap: 30px;
+
+            .brand-box {
+                width: 100%;
+                align-items: center;
+
+                .text {
+                    align-items: center;
+                }
+
+            }
+            .social-media {
+                width: 100%;
+            }
+        }
+    }
+}

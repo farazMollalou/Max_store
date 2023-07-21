@@ -1,0 +1,239 @@
+.slider-temp {
+  width: 90%;
+  height: 350px;
+  background-color: rgb(255, 53, 53);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  direction: rtl;
+  margin: 0 auto;
+  border-radius: 40px;
+  animation: appearance 1s linear;
+}
+@keyframes appearance {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slider-temp a {
+  text-decoration: none;
+}
+.slider-temp .swiper-scrollbar {
+  display: none;
+}
+.slider-temp .swiper-pagination-bullet {
+  visibility: hidden;
+}
+.slider-temp .swiper-button-next, .slider-temp .swiper-button-prev {
+  background-color: rgb(255, 230, 0);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  color: #000000;
+  transform: scale(0.7);
+}
+.slider-temp .slider-card, .slider-temp .last-card, .slider-temp .first-card {
+  padding: 15px 5px;
+  height: 300px;
+  width: 240px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  font-family: koodak;
+  background-color: #fff;
+  position: relative;
+}
+.slider-temp .slider-card img, .slider-temp .last-card img, .slider-temp .first-card img {
+  width: 70%;
+  height: auto;
+  object-fit: cover;
+}
+.slider-temp .slider-card .row1, .slider-temp .last-card .row1, .slider-temp .first-card .row1, .slider-temp .slider-card .row2, .slider-temp .last-card .row2, .slider-temp .first-card .row2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 10px;
+  width: 100%;
+  font-family: koodak;
+  direction: ltr;
+  padding: 0 20px;
+  color: #333333;
+  margin-top: 4px;
+}
+.slider-temp .slider-card .row1 .off-num, .slider-temp .last-card .row1 .off-num, .slider-temp .first-card .row1 .off-num, .slider-temp .slider-card .row2 .off-num, .slider-temp .last-card .row2 .off-num, .slider-temp .first-card .row2 .off-num {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(255, 54, 54);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 18px;
+  transform: rotate(-20deg);
+  clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.slider-temp .slider-card .row1 .current-price, .slider-temp .last-card .row1 .current-price, .slider-temp .first-card .row1 .current-price, .slider-temp .slider-card .row2 .current-price, .slider-temp .last-card .row2 .current-price, .slider-temp .first-card .row2 .current-price {
+  direction: rtl;
+  font-size: 20px;
+}
+.slider-temp .slider-card .row2, .slider-temp .last-card .row2, .slider-temp .first-card .row2 {
+  justify-content: center;
+  font-size: 12px;
+  color: rgb(166, 166, 166);
+}
+.slider-temp .slider-card .row3, .slider-temp .last-card .row3, .slider-temp .first-card .row3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #646464;
+}
+.slider-temp .slider-card .row3 .progress, .slider-temp .last-card .row3 .progress, .slider-temp .first-card .row3 .progress {
+  width: 90%;
+  height: 4px;
+  margin: 5px 0;
+  background-color: #cccccc;
+  position: relative;
+}
+.slider-temp .slider-card .row3 .progress .p-bar, .slider-temp .last-card .row3 .progress .p-bar, .slider-temp .first-card .row3 .progress .p-bar {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  background-color: rgb(255, 0, 60);
+}
+.slider-temp .slider-card .row3 .percent, .slider-temp .last-card .row3 .percent, .slider-temp .first-card .row3 .percent {
+  margin-left: 10px;
+  color: rgb(255, 0, 51);
+}
+.slider-temp .first-card {
+  color: #fff;
+  background-color: inherit;
+}
+.slider-temp .first-card h4 {
+  font-family: farnaz;
+}
+.slider-temp .first-card img {
+  width: 150px;
+  height: auto;
+}
+.slider-temp .first-card a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+}
+.slider-temp .first-card a:hover .arrow {
+  transform: translateX(-15px);
+  font-size: 30px;
+}
+.slider-temp .first-card a .arrow {
+  font-size: 20px;
+  transition: 0.5s;
+}
+.slider-temp .last-card {
+  transition: 0.5s;
+}
+.slider-temp .last-card:hover {
+  gap: 25px;
+}
+.slider-temp .last-card:hover .icon {
+  background-color: aqua;
+  color: #fff;
+}
+.slider-temp .last-card .icon {
+  width: 95px;
+  height: 95px;
+  border-radius: 50%;
+  border: aqua 4px solid;
+  color: aqua;
+  transform: scale(0.6);
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1200px) {
+  .slider-temp {
+    width: 95%;
+    height: 300px;
+    padding: 0 15px;
+  }
+  .slider-temp .slider-card, .slider-temp .first-card, .slider-temp .last-card {
+    padding: 5px 5px;
+    height: 240px;
+    width: 210px;
+    border-radius: 10px;
+  }
+  .slider-temp .slider-card img, .slider-temp .first-card img, .slider-temp .last-card img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+@media screen and (max-width: 992px) {
+  .slider-temp {
+    height: 270px;
+    padding: 0 15px;
+    border-radius: 10px;
+  }
+  .slider-temp .slider-card, .slider-temp .first-card, .slider-temp .last-card {
+    padding: 5px 5px;
+    height: 240px;
+    width: 210px;
+    border-radius: 10px;
+    gap: 8px;
+    font-family: koodak;
+    background-color: #fff;
+  }
+  .slider-temp .slider-card img, .slider-temp .first-card img, .slider-temp .last-card img {
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+  }
+  .slider-temp .first-card {
+    color: #fff;
+    background-color: inherit;
+  }
+  .slider-temp .first-card img {
+    width: 150px;
+    height: auto;
+  }
+  .slider-temp .first-card a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+  }
+  .slider-temp .first-card a:hover .arrow {
+    transform: translateX(-15px);
+    font-size: 30px;
+  }
+  .slider-temp .first-card a .arrow {
+    font-size: 20px;
+    transition: 0.5s;
+  }
+}
+@media screen and (max-width: 768px) {
+  .slider-temp {
+    margin: 0;
+    border-radius: 0;
+    width: 100%;
+    height: 280px;
+  }
+  .slider-temp .slider-card, .slider-temp .first-card, .slider-temp .last-card {
+    height: 260px;
+    margin: 0 auto;
+  }
+  .slider-temp .first-card img {
+    width: 120px;
+  }
+}/*# sourceMappingURL=Slider.css.map */

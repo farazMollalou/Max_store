@@ -1,0 +1,100 @@
+.IncredibleProductsBox {
+  display: flex;
+  flex-direction: column;
+  width: 97%;
+  margin: 0 auto;
+  padding: 40px 0 50px 0;
+}
+.IncredibleProductsBox .box-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-direction: column;
+  border-bottom: 2px rgb(197, 197, 197) solid;
+  margin-bottom: 20px;
+}
+.IncredibleProductsBox .box-header h5 {
+  font-family: koodak;
+  font-size: 26px;
+}
+.IncredibleProductsBox .box-header .sort-row {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: row;
+  padding: 20px 40px;
+  direction: rtl;
+  font-family: koodak;
+}
+.IncredibleProductsBox .box-header .sort-row .sorting-tabs {
+  width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.IncredibleProductsBox .box-header .sort-row .sorting-tabs .icon-box .sort-icon {
+  transform: scaleX(-1);
+}
+.IncredibleProductsBox .box-header .sort-row .sorting-tabs .icon-box .arrow-icon {
+  transform: rotate(-90deg) translate(-1px, 12px) scale(0.85);
+}
+.IncredibleProductsBox .box-header .sort-row .sorting-tabs .item {
+  padding: 3px 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: vazir;
+}
+.IncredibleProductsBox .box-header .sort-row .sorting-tabs .item:hover {
+  background-color: #eaeaea;
+}
+.IncredibleProductsBox .cards_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  direction: rtl;
+}
+
+@media screen and (max-width: 768px) {
+  .IncredibleProductsBox .box-header .sort-row {
+    padding: 15px 10px;
+  }
+  .IncredibleProductsBox .box-header .sort-row .sorting-tabs {
+    width: 350px;
+    justify-content: flex-start;
+  }
+  .IncredibleProductsBox .box-header .sort-row .sorting-tabs .icon-box .sort-icon {
+    transform: scale(0.7);
+  }
+  .IncredibleProductsBox .box-header .sort-row .sorting-tabs .icon-box .arrow-icon {
+    transform: rotate(-90deg) translate(-1px, 12px) scale(0.7);
+  }
+  .IncredibleProductsBox .box-header .sort-row .sorting-tabs .item {
+    font-size: 10px;
+    padding: 3px 5px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .IncredibleProductsBox .box-header h5 {
+    width: 100%;
+    text-align: center;
+  }
+  .IncredibleProductsBox .box-header .sort-row {
+    padding: 10px 4px;
+  }
+  .IncredibleProductsBox .box-header .sort-row .sorting-tabs {
+    width: 90%;
+  }
+  .IncredibleProductsBox .box-header .sort-row .sorting-tabs .icon-box {
+    width: 30px;
+  }
+  .IncredibleProductsBox .box-header .sort-row .sorting-tabs .icon-box .arrow-icon {
+    display: none;
+  }
+  .IncredibleProductsBox .box-header .sort-row .count {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=ProductsBox.css.map */

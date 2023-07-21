@@ -1,0 +1,127 @@
+.title {
+  width: 100%;
+  text-align: right;
+}
+
+.feedback-container {
+  width: 100%;
+  display: flex;
+  min-height: 700px;
+}
+.feedback-container .feedback-progress-container {
+  flex: 1.2;
+  font-family: koodak;
+  height: 300px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+.feedback-container .feedback-progress-container .row1 {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 60px;
+  gap: 10px;
+}
+.feedback-container .feedback-progress-container .row1 .score-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-size: 14px;
+}
+.feedback-container .feedback-progress-container .row1 .score-box .score {
+  margin: 10px;
+  font-size: 32px;
+  font-weight: 800;
+}
+.feedback-container .feedback-progress-container .row1 .star-box {
+  color: gold;
+}
+.feedback-container .feedback-progress-container .row1 .star-box .star-half {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.feedback-container .feedback-progress-container .row1 .star-box span {
+  font-size: 10px;
+  color: gray;
+  margin-right: 7px;
+  font-family: vazir;
+}
+.feedback-container .feedback-progress-container .progress-box {
+  width: 100%;
+  padding: 10px 5px;
+}
+.feedback-container .feedback-progress-container .progress-box .feed-title {
+  font-size: 20px;
+}
+.feedback-container .feedback-progress-container .progress-box .item {
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+  border: 1px rgb(211, 211, 211) solid;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+.feedback-container .feedback-progress-container .progress-box .item .topic {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 5px;
+  color: gray;
+  font-size: 13px;
+  font-family: vazir;
+}
+.feedback-container .feedback-progress-container .progress-box .item .topic .number {
+  font-family: koodak;
+}
+.feedback-container .feedback-progress-container .progress-box .item .bar-container {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.feedback-container .feedback-progress-container .progress-box .item .bar-container .good, .feedback-container .feedback-progress-container .progress-box .item .bar-container .bad, .feedback-container .feedback-progress-container .progress-box .item .bar-container .normal {
+  height: 8px;
+  background-color: #0b0;
+  border-radius: 0 10px 10px 0;
+}
+.feedback-container .feedback-progress-container .progress-box .item .bar-container .normal {
+  background-color: gold;
+  border-radius: 0;
+}
+.feedback-container .feedback-progress-container .progress-box .item .bar-container .bad {
+  background-color: rgb(220, 1, 1);
+  border-radius: 10px 0 0 10px;
+}
+.feedback-container .comments-box {
+  background-color: #ffffc7;
+  flex: 3;
+  border-radius: 10px;
+  height: 600px;
+  overflow-y: auto;
+  direction: ltr;
+  margin: 0 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .feedback-container .feedback-progress-container {
+    display: none;
+  }
+}/*# sourceMappingURL=Feedback.css.map */

@@ -1,0 +1,183 @@
+.product_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    position: relative;
+    border: 1px rgb(221, 221, 221) solid;
+    width: 300px;
+    height: 310px;
+    text-decoration: none;
+    color: rgb(57, 57, 57);
+    transition: .4s;
+    padding: 12px 0;
+    border-radius: 10px;
+
+    &:hover {
+        text-decoration: none;
+        box-shadow: 1px 1px 1px rgb(172, 172, 172), 2px 2px 2px #c0c0c0, 5px 5px 5px rgb(231, 231, 231), -2px -2px 2px #b5b5b5, -5px -5px 5px rgb(212, 212, 212);
+        color: rgb(70, 70, 70);
+    }
+    img {
+        width: 50%;
+        object-fit: cover;
+
+        &.hide-img {
+            display: none;
+        }
+    }
+    .discount_percent {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: rgb(255, 54, 54);
+        color: #fff;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 18px;
+        transform: rotate(-20deg);
+        clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .product-detail {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .card_title {
+            font-family: vazir;
+            font-size: 18px;
+            direction: rtl;
+            margin-top: 22px;
+        }
+        .row1 {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 15px;
+            width: 100%;
+            font-family: koodak;
+            direction: ltr;
+
+            .option {
+                color: rgb(119, 119, 119);
+                .rocket-icon {
+                    color: purple;
+                }
+                .gift-icon {
+                    color: green;
+                }
+            }
+            .score {
+                .star-icon {
+                    color: rgb(255, 196, 0);
+                }
+            }
+        }
+        .price-box {
+            margin-top: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 7px;
+            width: 100%;
+            padding: 0 12px;
+            font-family: koodak;
+
+            .text {
+                color: #929292;
+            }
+            em {
+                margin-right: 7px;
+            }
+            del {
+                color: #b0b0b0;
+                font-size: 16px;
+                position: relative;
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 11px;
+                    left: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #b0b0b0;
+                    border-radius: 10px;
+                }
+            }
+            span {
+                font-size: 20px;
+                direction: rtl;
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .product_card {
+        width: 95%;
+        flex-direction: row;
+        height: 240px;
+        
+        .discount_percent {
+            width: 32px;
+            height: 28px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+        img {
+            width: 40%;
+        }
+        .product-detail {
+            width: 55%;
+            justify-content: space-between;
+            // flex-direction: column;
+            // align-items: center;
+            // display: flex;
+            gap: 10px;
+            padding-top: 10px;
+
+            .card_title {
+                font-size: 12px;
+                font-weight: 600;
+            }
+            .row1 {
+                padding: 0 3px;
+
+                .option {
+                    font-size: 12px;
+
+                    .gift-icon, .rocket-icon {
+                        font-size: 12px;
+                    }
+                }
+                .score {
+                    font-size: 14px;
+                    .star-icon {
+                        font-size: 14px;
+                    }
+                }
+            }
+            .price-box {
+                padding: 0 4px;
+                margin-top: 8px;
+
+                del {
+                    font-size: 14px;
+                }
+                span {
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}

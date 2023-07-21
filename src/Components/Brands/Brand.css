@@ -1,0 +1,76 @@
+.brand_section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    margin: 80px auto;
+    background-color: #4000a8;
+    padding: 50px 0;
+}
+.brand_section .medal-icon {
+    color: rgb(238, 255, 0);
+    font-size: 32px;
+}
+.brand_section .title {
+    text-align: center;
+}
+.brand_section .brand-container {
+    /* display: flex;
+    align-items: center;
+    justify-content: space-evenly; */
+    white-space: nowrap;
+    overflow: auto;
+    width: 70%;
+    padding: 20px 30px 10px 30px;
+    direction: rtl;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+}
+.brand_section .brand-container::-webkit-scrollbar {
+    visibility: hidden;
+}
+.brand_section .brand-container::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+.brand_section .title {
+    font-family: koodak;
+    font-size: 24px;
+    color: #fff;
+}
+.brand_section .brand-container img {
+    width: 120px;
+    display: inline-block;
+    margin: 0 55px;
+}
+
+@media screen and (max-width: 992px) {
+    .brand_section {
+        gap: 50px;
+    }
+    .brand_section .brand-container {
+        flex-wrap: wrap;
+        gap: 40px;
+        /* padding: 0 30px; */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .brand_section .brand-container {
+        padding: 15px 10px 0 10px;
+        border-radius: 10px;
+    }
+    .brand_section .brand-container img {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .brand_section .title {
+        font-size: 20px;
+    }
+    .brand_section .brand-container img {
+        width: 100px;
+    }
+}
